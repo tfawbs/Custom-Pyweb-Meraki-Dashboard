@@ -50,13 +50,19 @@ If you want to start your own version of the scripts and at the same time read h
 
 <img src="images/Dashboard.png">
 Image showing the provided meraki-dashboard.py script dashboard  
+
 #
+
 <img src="images/Wireless_Client_Stats.png">
 Image showing a sample graph report for the Wireless Client Connection Stats
+
 # 
+
 <img src="images/Ping_Tool.png">
 Image showing the output of the Ping Tool with a successful ping
+
 # 
+
 <img src="images/API_Usage.gif">
 GIF showing the API Usage Overview report function 
 
