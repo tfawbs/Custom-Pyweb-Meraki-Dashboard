@@ -14,13 +14,13 @@
 
 [**Where to begin…**](#where-to-begin…)
 
-[**Quick Start Guides**](#quick-start-guides)
+[**Quick Start Guides**]
 
-[Quick Start for Provided Meraki Dashboard Script	9](#quick-start-guide-for-the-meraki-dashboard-script)
+[Quick Start for Provided Meraki Dashboard Script](#quick-start-guide-for-the-meraki-dashboard-script)
 
-[Quick Start for Live Tools Dashboard Script	9](#quick-start-guide-for-the-live-tools-dashboard-script)
+[Quick Start for Live Tools Dashboard Script](#quick-start-guide-for-the-live-tools-dashboard-script)
 
-[**General Notes, Tips and Tricks:	11**](#general-notes,-tips-and-tricks:)
+[**General Notes, Tips and Tricks:**](#general-notes,-tips-and-tricks:)
 
 # Description
 
@@ -55,7 +55,7 @@ Image showing the output of the Ping Tool with a successful ping
 GIF showing the API Usage Overview report function 
 
 # 
-
+---
 # Requirements
 
 Python (and dependant packages)  
