@@ -26,11 +26,15 @@
 
 # Description
 
-This project was published to demonstrate how any individual can create a custom dashboard utility that uses the Meraki API, Python and AI to build and present a custom front end that interacts with the Meraki platform without directly using the traditional Meraki Dashboard.
+This project is published to demonstrate how any individual can create a custom dashboard that uses the Meraki API, Python and AI to build a custom front end user experience to work with the Meraki platform without directly using the Meraki Dashboard.
 
-This project originated and got its inspiration from a network operation dashboard created by [Pascal Richner](https://www.linkedin.com/in/pascal-richner-61625893/) who demonstrated his implementation to the Meraki team. I was so impressed and amazed by his work that I wanted to recreate a form of it for use and education amongst the Meraki Community, thank you, Pascal.
+This project originated it's inspiration from a operation dashboard created by [Pascal Richner](https://www.linkedin.com/in/pascal-richner-61625893/) who demonstrated his implementation to the Meraki team. I was so amazed by his work that I wanted to recreate a form of it for use and education amongst the Meraki Community, thank you, Pascal.
 
-A goal of the project is to allow you to take a copy of it and develop it yourself using your own skillsets in coding OR Assistive AI tools (for example ChatGPT) depending on your strengths. I’ve tried to keep it broad but simple so that the only limitation is your imagination on what you can create with the API tools provided.
+A major goal of the project is to allow you to take a copy of it and develop it yourself using your own skills in coding OR using Assistive AI tools (for example ChatGPT) depending on your strengths.
+
+I’ve tried to keep it broad yet simple so that the only limitation is your imagination on what you can create with the API tools provided.
+
+#
 
 Primary examples of this project's use cases are, the scripts can be run and created in a way that provides restricted access to people who don’t need full Dashboard access, for example:
 
@@ -39,9 +43,9 @@ Primary examples of this project's use cases are, the scripts can be run and cre
 * Think of a Level 1 helpdesk operator who you want to restrict access to certain operations, changes and tools but provide other access like managing wireless users or devices.  
 * Think of a team that needs a static user experience dashboard, for example, updates to the Dashboard UI might change and break your internal process documentation, by creating your own version of the dashboard and tools you can limit UX changes to when you want them.
 
-If you’ve seen the screenshots of this project and want to just get right into running a version of it, jump to the ***Quick Start Guides***.
+If you’ve seen the screenshots of this project and want to just get right into running a version of it, jump to the ***Quick Start Guides***(#quick-start-guide).
 
-If you want to start your own version of the scripts and at the same time read how I started my journey, go to the section titled “***Where to begin…***”.
+If you want to start your own version of the scripts and at the same time read how I started my journey, go to the section titled “***Where to begin…***”(#where-to-begin…).
 
 
 <img src="images/Dashboard.png">
