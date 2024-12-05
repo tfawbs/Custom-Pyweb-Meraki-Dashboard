@@ -101,68 +101,68 @@ This part of the guide starts from scratch to build a new dashboard, we go throu
 
 PROMPT TO CHATGPT:  
 ```
-   I want to create a custom webpage that acts as a Dashboard for the Meraki API, and I want to use Python with Pyweb.IO. I want the Python script to make API calls with the Python requests package. The purpose of this custom dashboard is for users to interact with Meraki APIs with a custom front end.
+I want to create a custom webpage that acts as a Dashboard for the Meraki API, and I want to use Python with Pyweb.IO. I want the Python script to make API calls with the Python requests package. The purpose of this custom dashboard is for users to interact with Meraki APIs with a custom front end.
 
-   To start with let's create a function that creates a new network in the Meraki Dashboard. This function should be an onclick option in a menu that we can add more functions to later.*
+To start with let's create a function that creates a new network in the Meraki Dashboard. This function should be an onclick option in a menu that we can add more functions to later.*
 
-   The “Create a Network” function should do the following things, it should use the Meraki API endpoint called **createOrganizationNetwork**, and it should ask the user for the following parameters to pass onto the API call it will make, name, notes, productTypes. The option for productTypes should be a check box and it should consist of the options, "appliance", "switch", "wireless", "camera", "sensor", "cellularGateway".
+The “Create a Network” function should do the following things, it should use the Meraki API endpoint called **createOrganizationNetwork**, and it should ask the user for the following parameters to pass onto the API call it will make, name, notes, productTypes. The option for productTypes should be a check box and it should consist of the options, "appliance", "switch", "wireless", "camera", "sensor", "cellularGateway".
 
-   The script should have a variables section that is where we can paste our organization ID and API key for use within the rest of the script.
+The script should have a variables section that is where we can paste our organization ID and API key for use within the rest of the script.
 
-   When we import pywebio lets import all. The script should also run in server mode on port 8999 and with debug mode true
+When we import pywebio lets import all. The script should also run in server mode on port 8999 and with debug mode true
 ```
 
 The output that ChatGPT 4o mini (October 2024\) provided for the above prompt is the following lines of code, in addition, it gives you an explanation of why it did this and importantly a **How to run it** guide.
 
 *The Code*:
 ```bash
-      from pywebio import start_server
-      from pywebio.input import input, checkbox
-      from pywebio.output import put_buttons, put_text
-      import requests
+from pywebio import start_server
+from pywebio.input import input, checkbox
+from pywebio.output import put_buttons, put_text
+import requests
 
-      # Variables section
-      ORG_ID = 'your_organization_id'
-      API_KEY = 'your_api_key'
+# Variables section
+ORG_ID = 'your_organization_id'
+API_KEY = 'your_api_key'
 
-      # Function to create a new network
-      def create_network():
-         # Get user input
-         network_name = input("Enter the network name:")
-         network_notes = input("Enter network notes:")
-         product_types = checkbox("Select product types for the network:", options=[
-            "appliance", "switch", "wireless", "camera", "sensor", "cellularGateway"
-         ])
-         
-         # Prepare payload for the API call
-         payload = {
-            "name": network_name,
-            "notes": network_notes,
-            "productTypes": product_types
-         }
-         
-         # Make API call to create a new network
-         url = f"https://api.meraki.com/api/v1/organizations/{ORG_ID}/networks"
-         headers = {
-            "X-Cisco-Meraki-API-Key": API_KEY,
-            "Content-Type": "application/json"
-         }
-         
-         response = requests.post(url, json=payload, headers=headers)
+# Function to create a new network
+def create_network():
+   # Get user input
+   network_name = input("Enter the network name:")
+   network_notes = input("Enter network notes:")
+   product_types = checkbox("Select product types for the network:", options=[
+      "appliance", "switch", "wireless", "camera", "sensor", "cellularGateway"
+   ])
+   
+   # Prepare payload for the API call
+   payload = {
+      "name": network_name,
+      "notes": network_notes,
+      "productTypes": product_types
+   }
+   
+   # Make API call to create a new network
+   url = f"https://api.meraki.com/api/v1/organizations/{ORG_ID}/networks"
+   headers = {
+      "X-Cisco-Meraki-API-Key": API_KEY,
+      "Content-Type": "application/json"
+   }
+   
+   response = requests.post(url, json=payload, headers=headers)
 
-         # Handle the response
-         if response.status_code == 201:
-            put_text("Network created successfully!")
-         else:
-            put_text(f"Error creating network: {response.status_code} - {response.text}")
+   # Handle the response
+   if response.status_code == 201:
+      put_text("Network created successfully!")
+   else:
+      put_text(f"Error creating network: {response.status_code} - {response.text}")
 
-      # Main function to create the menu
-      def main():
-         put_buttons(['Create Network'], [create_network])
+# Main function to create the menu
+def main():
+   put_buttons(['Create Network'], [create_network])
 
-      # Start the server
-      if __name__ == '__main__':
-         start_server(main, port=8999, debug=True)
+# Start the server
+if __name__ == '__main__':
+   start_server(main, port=8999, debug=True)
 ```
 
 1) The first thing we need to do is read over the script we got back from the AI (it may give you a different output from what is above). 
