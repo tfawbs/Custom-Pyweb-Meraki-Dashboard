@@ -100,8 +100,7 @@ This part of the guide starts from scratch to build a new dashboard, we go throu
    *NOTE: Don’t worry about telling it “everything” in one hit, we can add features and functions as we go, just get a starting foundation and build from there. I worked by adding function to function and found this easiest to develop and troubleshoot.*
 
 PROMPT TO CHATGPT:  
-```
-I want to create a custom webpage that acts as a Dashboard for the Meraki API, and I want to use Python with Pyweb.IO. I want the Python script to make API calls with the Python requests package. The purpose of this custom dashboard is for users to interact with Meraki APIs with a custom front end.
+```I want to create a custom webpage that acts as a Dashboard for the Meraki API, and I want to use Python with Pyweb.IO. I want the Python script to make API calls with the Python requests package. The purpose of this custom dashboard is for users to interact with Meraki APIs with a custom front end.
 
 To start with let's create a function that creates a new network in the Meraki Dashboard. This function should be an onclick option in a menu that we can add more functions to later.*
 
@@ -109,8 +108,7 @@ The “Create a Network” function should do the following things, it should us
 
 The script should have a variables section that is where we can paste our organization ID and API key for use within the rest of the script.
 
-When we import pywebio lets import all. The script should also run in server mode on port 8999 and with debug mode true
-```
+When we import pywebio lets import all. The script should also run in server mode on port 8999 and with debug mode true```
 
 The output that ChatGPT 4o mini (October 2024\) provided for the above prompt is the following lines of code, in addition, it gives you an explanation of why it did this and importantly a **How to run it** guide.
 
