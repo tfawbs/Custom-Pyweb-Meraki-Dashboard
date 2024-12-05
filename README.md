@@ -47,24 +47,14 @@ If you’ve seen the screenshots of this project and want to just get right into
 
 If you want to start your own version of the scripts and at the same time read how I started my journey, go to the section titled “***Where to begin…***”.
 
-
+Image showing the provided meraki-dashboard.py script dashboard:
 <img src="images/Dashboard.png">
-Image showing the provided meraki-dashboard.py script dashboard  
-
-#
-
+Image showing a sample graph report for the Wireless Client Connection Stats:
 <img src="images/Wireless_Client_Stats.png">
-Image showing a sample graph report for the Wireless Client Connection Stats
-
-# 
-
+Image showing the output of the Ping Tool with a successful ping:
 <img src="images/Ping_Tool.png">
-Image showing the output of the Ping Tool with a successful ping
-
-# 
-
+GIF showing the API Usage Overview report function: 
 <img src="images/API_Usage.gif">
-GIF showing the API Usage Overview report function 
 
 # 
 
@@ -97,6 +87,8 @@ We implement the solution in these three easy steps
 1. Determine our goal, in our case “Create a custom dashboard that interacts with the Meraki API using Pyweb.IO”  
 2. Generate the code with detailed prompts to the AI (ChatGPT) explaining what we are doing and our goal, what it should create, look and work like, and any extra specific parameters we want, for example, colours, layouts, menus, and buttons.  
 3. Troubleshoot and test while working with the AI tool to resolve any bugs or errors we encounter and continue to build out the dashboard as we want it.
+
+---
 
 # Where to begin…
 
