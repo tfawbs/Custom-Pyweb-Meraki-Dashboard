@@ -280,10 +280,10 @@ This is a quick start guide to get you up and running with the live tools script
 **NOTE:** *Beware, this is not a secure API Key storage method\!*
 
 3. Install the following Python packages with the following commands  
-   1. *pip install pywebio*  
-   2. *pip install requests*  
+   1. *`pip install pywebio`*  
+   2. *`pip install requests`*  
 4. In a terminal navigate to the working directory and run the command  
-   1. *python meraki-dashboard.py*  
+   1. *`python meraki-dashboard.py`*  
 5. In a browser open the URL prompted by the application on the next line, for example: [http://localhost:8999/](http://localhost:8999/)  
 6. Load the webpage and start working with the functions\!
 
@@ -294,7 +294,7 @@ This is a quick start guide to get you up and running with the live tools script
 * Try to think of the AI as an assistant or employee when you work with it. Directing it as a leader, praising it for getting things right and collaborating with it when things go wrong or get hard to figure out.
 
 * The PywebIO scripts I provide run in server mode with debugging enabled, you’ll see this line at toward end of the scripts:   
-  *start\_server(main, port=8999, debug=True)*  
+  *`start\_server(main, port=8999, debug=True)`*  
   By using debug=True to enable debug mode, the server will automatically reload if the code changes.
 
 * One possible way of avoiding storing your API key in the script is to have the script function prompt you for your key every time you run a function. You can ask the AI to update the script to do this, but often I found the AI would do this by default.
