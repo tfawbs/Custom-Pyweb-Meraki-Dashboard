@@ -4,10 +4,6 @@
 
 [**Description**](#description)
 
-[**Requirements**](#requirements)
-
-[**Quick Start Guide**](#quick-start-guide)
-
 [**The Challenges and Reasons Behind Creating a Custom Dashboard**](#the-challenges-and-reasons-behind-creating-a-custom-dashboard)
 
 [**The Solution**](#the-solution)
@@ -15,6 +11,10 @@
 [**Where to begin…**](#where-to-begin…)
 
 **Quick Start Guides**
+
+[**Requirements**](#requirements)
+
+[**Quick Start Guide**](#quick-start-guide)
 
 [Quick Start for Provided Meraki Dashboard Script](#quick-start-guide-for-the-meraki-dashboard-script)
 
@@ -46,13 +46,10 @@ If you want to start your own version of the scripts and at the same time read h
 
 <img src="images/Dashboard.png">
 Image showing the provided meraki-dashboard.py script dashboard  
-
 <img src="images/Wireless_Client_Stats.png">
 Image showing a sample graph report for the Wireless Client Connection Stats
-
 <img src="images/Ping_Tool.png">
 Image showing the output of the Ping Tool with a successful ping
-
 <img src="images/API_Usage.gif">
 GIF showing the API Usage Overview report function 
 
@@ -98,15 +95,17 @@ This part of the guide starts from scratch to build a new dashboard, we go throu
    *NOTE: Don’t worry about telling it “everything” in one hit, we can add features and functions as we go, just get a starting foundation and build from there. I worked by adding function to function and found this easiest to develop and troubleshoot.*
 
 PROMPT TO CHATGPT:  
-*I want to create a custom webpage that acts as a Dashboard for the Meraki API, and I want to use Python with Pyweb.IO. I want the Python script to make API calls with the Python requests package. The purpose of this custom dashboard is for users to interact with Meraki APIs with a custom front end.*
+```
+   *I want to create a custom webpage that acts as a Dashboard for the Meraki API, and I want to use Python with Pyweb.IO. I want the Python script to make API calls with the Python requests package. The purpose of this custom dashboard is for users to interact with Meraki APIs with a custom front end.*
 
-*To start with let's create a function that creates a new network in the Meraki Dashboard. This function should be an onclick option in a menu that we can add more functions to later.* 
+   *To start with let's create a function that creates a new network in the Meraki Dashboard. This function should be an onclick option in a menu that we can add more functions to later.* 
 
-*The “Create a Network” function should do the following things, it should use the Meraki API endpoint called **createOrganizationNetwork**, and it should ask the user for the following parameters to pass onto the API call it will make, name, notes, productTypes. The option for productTypes should be a check box and it should consist of the options, "appliance", "switch", "wireless", "camera", "sensor", "cellularGateway".*
+   *The “Create a Network” function should do the following things, it should use the Meraki API endpoint called **createOrganizationNetwork**, and it should ask the user for the following parameters to pass onto the API call it will make, name, notes, productTypes. The option for productTypes should be a check box and it should consist of the options, "appliance", "switch", "wireless", "camera", "sensor", "cellularGateway".*
 
-*The script should have a variables section that is where we can paste our organization ID and API key for use within the rest of the script.*
+   *The script should have a variables section that is where we can paste our organization ID and API key for use within the rest of the script.*
 
-*When we import pywebio lets import all. The script should also run in server mode on port 8999 and with debug mode true*
+   *When we import pywebio lets import all. The script should also run in server mode on port 8999 and with debug mode true*
+```
 
 The output that ChatGPT 4o mini (October 2024\) provided for the above prompt is the following lines of code, in addition, it gives you an explanation of why it did this and importantly a **How to run it** guide.
 
