@@ -14,13 +14,15 @@
 
 [**Where to begin…**](#where-to-begin…)
 
-[**Quick Start Guides**]
+**Quick Start Guides**
 
 [Quick Start for Provided Meraki Dashboard Script](#quick-start-guide-for-the-meraki-dashboard-script)
 
 [Quick Start for Live Tools Dashboard Script](#quick-start-guide-for-the-live-tools-dashboard-script)
 
-[**General Notes, Tips and Tricks:**](#general-notes,-tips-and-tricks:)
+[**General Notes, Tips and Tricks**](#general-notes,-tips-and-tricks)
+
+#
 
 # Description
 
@@ -53,43 +55,6 @@ Image showing the output of the Ping Tool with a successful ping
 
 <img src="images/API_Usage.gif">
 GIF showing the API Usage Overview report function 
-
-# 
----
-# Requirements
-
-Python (and dependant packages)  
-Meraki API Key \- Do not put personal information into assistive AI tools, ie your API key  
-Organization ID \- Do not put personal information into assistive AI tools  
-Recommended but not required: some familiarity with scripting languages  
-Recommended but not required: some familiarity with prompt engineering for AI
-
-# Quick Start Guide
-
-These quick start guides are provided to get you up and running with the Python scripts that I have created and shown:
-
-[\[Quick Start for Provided Meraki Dashboard Script\]](#quick-start-guide-for-the-meraki-dashboard-script)  
-This script can do the following tasks:
-
-* Create Networks (Clone Networks)  
-* Create Admins  
-* List Organisations and Networks  
-* Get Device Events (Seeing Devices Online\\Offline Status)  
-* Delete Networks (No checks are performed, use this with Caution\!)  
-* Get Wireless Network Statistics  
-* Get Wireless Client Connection Statistics   
-* Get API Usage Overview   
-* Live Tools \- Blink LEDs, Ping, Reboot Devices  
-* Layer 3 Firewall Rules Config Drift Compare Tool  
-  * 1\. Run \[Create Baseline DB File\] First  
-  * 2\. Run \[Get L3 FW Baseline\] Second  
-  * 3\. Run \[Compare Current L3 FW to Baseline\] to see config differences  
-* Get Device Firmware Status for the whole Organization
-
-[\[Quick Start for Live Tools Dashboard Script\]](#quick-start-guide-for-the-live-tools-dashboard-script)  
-This script can be used for the following live tools only
-
-* Live Tools \- Blink LEDs, Ping, Reboot Devices
 
 # 
 
@@ -241,7 +206,44 @@ If you follow this process you can build whatever you can imagine with the API t
 
 You could even upload a copy of the *meraki-dashboard.py* script in the git repo, to ChatGPT and work with it as a foundational point to add features or change the script however you want it to be, allowing you to reverse engineer it and make it work for you.
 
+---
+
 # Quick Start Guides
+
+# Requirements
+
+Python (and dependant packages)  
+Meraki API Key \- Do not put personal information into assistive AI tools, ie your API key  
+Organization ID \- Do not put personal information into assistive AI tools  
+Recommended but not required: some familiarity with scripting languages  
+Recommended but not required: some familiarity with prompt engineering for AI
+
+# Quick Start Guide
+
+These quick start guides are provided to get you up and running with the Python scripts that I have created and shown:
+
+[\[Quick Start for Provided Meraki Dashboard Script\]](#quick-start-guide-for-the-meraki-dashboard-script)  
+This script can do the following tasks:
+
+* Create Networks (Clone Networks)  
+* Create Admins  
+* List Organisations and Networks  
+* Get Device Events (Seeing Devices Online\\Offline Status)  
+* Delete Networks (No checks are performed, use this with Caution\!)  
+* Get Wireless Network Statistics  
+* Get Wireless Client Connection Statistics   
+* Get API Usage Overview   
+* Live Tools \- Blink LEDs, Ping, Reboot Devices  
+* Layer 3 Firewall Rules Config Drift Compare Tool  
+  * 1\. Run \[Create Baseline DB File\] First  
+  * 2\. Run \[Get L3 FW Baseline\] Second  
+  * 3\. Run \[Compare Current L3 FW to Baseline\] to see config differences  
+* Get Device Firmware Status for the whole Organization
+
+[\[Quick Start for Live Tools Dashboard Script\]](#quick-start-guide-for-the-live-tools-dashboard-script)  
+This script can be used for the following live tools only
+
+* Live Tools \- Blink LEDs, Ping, Reboot Devices
 
 ## Quick Start Guide for the Meraki Dashboard Script 
 
@@ -283,7 +285,7 @@ This is a quick start guide to get you up and running with the live tools script
 
 # 
 
-## General Notes, Tips and Tricks:
+## General Notes, Tips and Tricks
 
 * Try to think of the AI as an assistant or employee when you work with it. Directing it as a leader, praising it for getting things right and collaborating with it when things go wrong or get hard to figure out.
 
