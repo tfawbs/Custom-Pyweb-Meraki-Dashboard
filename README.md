@@ -99,13 +99,13 @@ This part of the guide starts from scratch to build a new dashboard, we go throu
 2. We need to craft our prompt to ChatGPT, we’re going to start with a detailed prompt that outlines what we want to do in as much relevant detail for the AI which should help it give us as near an outcome to what we want.   
    *NOTE: Don’t worry about telling it “everything” in one hit, we can add features and functions as we go, just get a starting foundation and build from there. I worked by adding function to function and found this easiest to develop and troubleshoot.*
 
-PROMPT TO CHATGPT:  
+*Prompt to ChatGPT*:  
 ```
 I want to create a custom webpage that acts as a Dashboard for the Meraki API, and I want to use Python with Pyweb.IO. I want the Python script to make API calls with the Python requests package. The purpose of this custom dashboard is for users to interact with Meraki APIs with a custom front end.
 
-To start with let's create a function that creates a new network in the Meraki Dashboard. This function should be an onclick option in a menu that we can add more functions to later.*
+To start with let's create a function that creates a new network in the Meraki Dashboard. This function should be an onclick option in a menu that we can add more functions to later. 
 
-The “Create a Network” function should do the following things, it should use the Meraki API endpoint called **createOrganizationNetwork**, and it should ask the user for the following parameters to pass onto the API call it will make, name, notes, productTypes. The option for productTypes should be a check box and it should consist of the options, "appliance", "switch", "wireless", "camera", "sensor", "cellularGateway".
+The “Create a Network” function should do the following things, it should use the Meraki API endpoint called createOrganizationNetwork, and it should ask the user for the following parameters to pass onto the API call it will make, name, notes, productTypes. The option for productTypes should be a check box and it should consist of the options, "appliance", "switch", "wireless", "camera", "sensor", "cellularGateway".
 
 The script should have a variables section that is where we can paste our organization ID and API key for use within the rest of the script.
 
@@ -181,7 +181,7 @@ if __name__ == '__main__':
 
 5. Review the “How to Run” section that the AI provided. In my prompt example, it advised that we needed to have the necessary packages installed. To do this, follow what it said to do, in my case, run the following command in your terminal:
 
-   *pip install pywebio requests*
+   `pip install pywebio requests`
 
    
 
@@ -189,7 +189,7 @@ if __name__ == '__main__':
 
 6. Attempt to run the script, open a terminal and change to your working directory, run the script with the command: 
 
-   *python meraki-dashboard.py*
+   `python meraki-dashboard.py`
 
 7. If the script ran successfully open the IP and port number provided in the terminal output in a browser, ie if you’re running this locally *https://localhost:8999*  
    1. If you get any errors when running the script, copy the error text and message the AI tool to tell it what happened and get help with troubleshooting.   
@@ -260,12 +260,12 @@ This is a quick start guide to get you up and running with the dashboard script 
 **NOTE:** *Beware, this is not a secure API Key storage method\!* 
 
 3. Install the following Python packages with the following commands  
-   1. *pip install pywebio*  
-   2. *pip install requests*  
-   3. *pip install pytz*  
-   4. *pip install pyecharts*  
+   1. *`pip install pywebio`*  
+   2. *`pip install requests`*  
+   3. *`pip install pytz`*  
+   4. *`pip install pyecharts`*  
 4. In a terminal navigate to the working directory and run the command  
-   1. *python meraki-dashboard.py*  
+   1. *`python meraki-dashboard.py`*  
 5. In a browser open the URL prompted by the application on the next line, for example: [http://localhost:8999/](http://localhost:8999/)  
 6. Load the webpage and start working with the functions\!
 
