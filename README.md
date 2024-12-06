@@ -10,7 +10,7 @@
 
 [**Where to begin**](#Where-to-begin)
 
-[**Quick Start Guides**] (#quick-start-guides)
+[**Quick Start Guides**](#quick-start-guides)
 
 [**Requirements**](#requirements)
 
@@ -20,7 +20,7 @@
 
 [Quick Start for Live Tools Dashboard Script](#quick-start-guide-for-the-live-tools-dashboard-script)
 
-[**General Notes, Tips and Tricks**](#general-notes,-tips-and-tricks)
+[**General Notes, Tips and Tricks**](#general-notes-tips-and-tricks)
 
 #
 
