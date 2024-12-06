@@ -8,9 +8,9 @@
 
 [**The Solution**](#the-solution)
 
-[**Where to begin…**](#where-to-begin…)
+[**Where to begin**](#Where-to-begin)
 
-**Quick Start Guides**
+[**Quick Start Guides**] (#quick-start-guides)
 
 [**Requirements**](#requirements)
 
@@ -45,7 +45,7 @@ Primary examples of this project's use cases are, the scripts can be run and cre
 
 If you’ve seen the screenshots of this project and want to just get right into running a version of it, jump to the ***Quick Start Guides***.
 
-If you want to start your own version of the scripts and at the same time read how I started my journey, go to the section titled “***Where to begin…***”.
+If you want to start your own version of the scripts and at the same time read how I started my journey, go to the section titled “***Where to begin***”.
 
 Image showing the provided meraki-dashboard.py script dashboard:
 <img src="images/Dashboard.png">
@@ -90,7 +90,7 @@ We implement the solution in these three easy steps
 
 ---
 
-# Where to begin…
+# Where to begin
 
 This part of the guide starts from scratch to build a new dashboard, we go through the steps I used and can be replicated by you to create a dashboard from scratch using AI:
 
