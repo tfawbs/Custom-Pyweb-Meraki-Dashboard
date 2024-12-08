@@ -14,7 +14,7 @@
 
 [**Requirements**](#requirements)
 
-[**Quick Start Guide**](#quick-start-guide)
+[**About Quick Starts**](#about-quick-starts)
 
 [Quick Start for Provided Meraki Dashboard Script](#quick-start-guide-for-the-meraki-dashboard-script)
 
@@ -222,7 +222,7 @@ Organization ID \- Do not put personal information into assistive AI tools
 Recommended but not required: some familiarity with scripting languages  
 Recommended but not required: some familiarity with prompt engineering for AI
 
-# Quick Start Guide
+# About Quick Starts
 
 These quick start guides are provided to get you up and running with the Python scripts that I have created and shown:
 
