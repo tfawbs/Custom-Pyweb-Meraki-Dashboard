@@ -227,7 +227,7 @@ Recommended but not required: some familiarity with prompt engineering for AI
 These quick start guides are provided to get you up and running with the Python scripts that I have created and shown:
 
 [\[Quick Start for Provided Meraki Dashboard Script\]](#quick-start-guide-for-the-meraki-dashboard-script)  
-This script can do the following tasks:
+The [Meraki dashboard script](scripts/meraki-dashboard.py) can do the following tasks:
 
 * Create Networks (Clone Networks)  
 * Create Admins  
@@ -245,16 +245,19 @@ This script can do the following tasks:
 * Get Device Firmware Status for the whole Organization
 
 [\[Quick Start for Live Tools Dashboard Script\]](#quick-start-guide-for-the-live-tools-dashboard-script)  
-This script can be used for the following live tools only
+The [live tools](scripts/live-tools.py) script can be used to run the following live tools:
 
-* Live Tools \- Blink LEDs, Ping, Reboot Devices
+* Live Tools
+   * 1\. Blink LEDs
+   * 2\. Ping
+   * 3\. Reboot Devices
 
 ## Quick Start Guide for the Meraki Dashboard Script 
 
-This is a quick start guide to get you up and running with the dashboard script right away, you can then build it up or edit it to suit your needs.   
+This is a quick start guide to get you up and running with the [Meraki dashboard script](scripts/meraki-dashboard.py) right away, you can then build it up or edit it to suit your needs.   
 **NOTE:** Python must be already installed
 
-1. Download a copy of the “*meraki-dashboard.py*” script and place it in your working directory.  
+1. Download a copy of the [“*meraki-dashboard.py*”](scripts/meraki-dashboard.py) script and place it in your working directory.  
 2. Open the “*meraki-dashboard.py*” script in a text editor of your choice and paste in the values for your [Organization ID](https://developer.cisco.com/meraki/api-v1/get-organizations/) and [API Key](https://documentation.meraki.com/General_Administration/Other_Topics/Cisco_Meraki_Dashboard_API#Generate_API_Key) on lines 20 and 21\.
 
 **NOTE:** *Beware, this is not a secure API Key storage method\!* 
@@ -271,10 +274,10 @@ This is a quick start guide to get you up and running with the dashboard script 
 
 ## Quick Start Guide for the Live Tools Dashboard Script
 
-This is a quick start guide to get you up and running with the live tools script right away, you can then build it up or edit it to suit your needs.  
+This is a quick start guide to get you up and running with the [live tools](scripts/live-tools.py) script right away, you can then build it up or edit it to suit your needs.  
 **NOTE:** Python must be already installed
 
-1. Download a copy of the “*live-tools.py*” script and place it in your working directory  
+1. Download a copy of the [“*live-tools.py*”](scripts/live-tools.py) script and place it in your working directory  
 2. Open the “*live-tools.py*” script in a text editor of your choice and paste in the values for your [Organization ID](https://developer.cisco.com/meraki/api-v1/get-organizations/) and [API Key](https://documentation.meraki.com/General_Administration/Other_Topics/Cisco_Meraki_Dashboard_API#Generate_API_Key) on lines 12 and 13
 
 **NOTE:** *Beware, this is not a secure API Key storage method\!*
