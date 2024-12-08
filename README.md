@@ -43,7 +43,7 @@ Primary examples of this project's use cases are, the scripts can be run and cre
 * Think of a Level 1 helpdesk operator who you want to restrict access to certain operations, changes and tools but provide other access like managing wireless users or devices.  
 * Think of a team that needs a static user experience dashboard, for example, updates to the Dashboard UI might change and break your internal process documentation, by creating your own version of the dashboard and tools you can limit UX changes to when you want them.
 
-If you’ve seen the screenshots of this project and want to just get right into running a version of it, jump to the ***Quick Start Guides***.
+If you’ve seen the screenshots of this project and want to just get right into running a version of it, jump to the ***Quick Start Guides***(#quick-start-guides).
 
 If you want to start your own version of the scripts and at the same time read how I started my journey, go to the section titled “***Where to begin***”.
 
