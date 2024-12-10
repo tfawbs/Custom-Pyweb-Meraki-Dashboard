@@ -26,11 +26,11 @@
 
 # Description
 
-This project is published to demonstrate how any individual can create a custom dashboard that uses the Meraki API, Python and AI to build a custom front end user experience to work with the Meraki platform without directly using the Meraki Dashboard.
+This project is published to demonstrate how any individual can create a custom dashboard that uses the Meraki API, Python, and AI to build a custom front-end user experience to work with the Meraki platform without directly using the Meraki Dashboard.
 
-This project originated it's inspiration from a operation dashboard created by [Pascal Richner](https://www.linkedin.com/in/pascal-richner-61625893/) who demonstrated his implementation to the Meraki team. I was so amazed by his work that I wanted to recreate a form of it for use and education amongst the Meraki Community, thank you, Pascal.
+This project originated its inspiration from an operation dashboard created by [Pascal Richner](https://www.linkedin.com/in/pascal-richner-61625893/), who demonstrated his implementation to the Meraki team. I was so amazed by his work that I wanted to recreate a form of it for use and education amongst the Meraki Community. Thank you, Pascal.
 
-A major goal of the project is to allow you to take a copy of it and develop it yourself using your own skills in coding OR using Assistive AI tools (for example ChatGPT) depending on your strengths.
+A major goal of the project is to allow you to take a copy of it and develop it yourself using your own skills in coding OR using Assistive AI tools (for example, ChatGPT) depending on your strengths.
 
 I’ve tried to keep it broad yet simple so that the only limitation is your imagination on what you can create with the API tools provided.
 
@@ -38,8 +38,8 @@ I’ve tried to keep it broad yet simple so that the only limitation is your ima
 
 Primary examples of this project's use cases are, the scripts can be run and created in a way that provides restricted access to people who don’t need full Dashboard access, for example:
 
-* Think of an onsite engineer who only needs to run dashboard Live Tools access, you can easily present access to just the ping tool or blind LED tool, etc.  
-* Think of a Helpdesk Manager who only needs a quick overview of wireless network connection statistics or other statistics, but does not need the entire suite of Meraki tools, you could create scripts that only show them the data points they need.  
+* Think of an onsite engineer who only needs to run dashboard Live Tools access; you can easily present access to just the ping tool or blind LED tool, etc.  
+* Think of a Helpdesk Manager who only needs a quick overview of wireless network connection statistics or other statistics but does not need the entire suite of Meraki tools; you could create scripts that only show them the data points they need.  
 * Think of a Level 1 helpdesk operator who you want to restrict access to certain operations, changes and tools but provide other access like managing wireless users or devices.  
 * Think of a team that needs a static user experience dashboard, for example, updates to the Dashboard UI might change and break your internal process documentation, by creating your own version of the dashboard and tools you can limit UX changes to when you want them.
 
@@ -60,17 +60,17 @@ GIF showing the API Usage Overview report function:
 
 # The Challenges and Reasons Behind Creating a Custom Dashboard
 
-Building a custom dashboard for the Meraki ecosystem has always required a combination of different experiences, knowledge and skills, and an undefinable amount of time-based human resources (dev ops) that not everyone nor every organisation has easy access to.
+Building a custom dashboard for the Meraki ecosystem has always required a combination of different experiences, knowledge, and skills, and an undefinable amount of time-based human resources (dev ops) that not everyone nor every organization has easy access to.
 
 - We can solve this challenge by utilizing Assistive AI tools to fill in the gaps in knowledge and skill and cut down time constraints by generating code.
 
-The Meraki Dashboard has a limited scope when it comes to implementing forms of  “Rule Based Access Control” for features and functions to users who do not need the traditional full or read-only dashboard admin access, ie “Only access Live Tools for onsite engineers”
+The Meraki Dashboard has a limited scope when it comes to implementing forms of  “Rule Based Access Control” for features and functions to users who do not need the traditional full or read-only dashboard admin access, i.e. “Only access Live Tools for onsite engineers.”
 
 - This can be solved by scoping only the required API endpoints into a custom dashboard presenting only the tools functions and features needed in a user-friendly GUI.
 
-Traditionally Python, Web App knowledge, an understanding of the Meraki ecosystem and its API endpoints and a committed DevOps resource have all been needed to produce a usable custom dashboard interface to meet business needs.
+Traditionally, Python, Web App knowledge, an understanding of the Meraki ecosystem and its API endpoints and a committed DevOps resource have all been needed to produce a usable custom dashboard interface to meet business needs.
 
-- This can be solved easily with Assistive AI to fill each one of those requirements
+- This can be solved easily with Assistive AI to fill each one of those requirements.
 
 # The Solution
 
@@ -216,7 +216,7 @@ You could even upload a copy of the *meraki-dashboard.py* script in the git repo
 
 # Requirements
 
-Python (and dependant packages)  
+Python (and dependent packages)  
 Meraki API Key \- Do not put personal information into assistive AI tools, ie your API key  
 Organization ID \- Do not put personal information into assistive AI tools  
 Recommended but not required: some familiarity with scripting languages  
@@ -262,14 +262,14 @@ This is a quick start guide to get you up and running with the [Meraki dashboard
 
 **NOTE:** *Beware, this is not a secure API Key storage method\!* 
 
-3. Install the following Python packages with the following commands  
+3. Install the following Python packages with the following commands:
    1. *`pip install pywebio`*  
    2. *`pip install requests`*  
    3. *`pip install pytz`*  
    4. *`pip install pyecharts`*  
-4. In a terminal navigate to the working directory and run the command  
+4. In a terminal, navigate to the working directory and run the command:  
    1. *`python meraki-dashboard.py`*  
-5. In a browser open the URL prompted by the application on the next line, for example: [http://localhost:8999/](http://localhost:8999/)  
+5. In a browser, open the URL prompted by the application on the next line, for example: [http://localhost:8999/](http://localhost:8999/)  
 6. Load the webpage and start working with the functions\!
 
 ## Quick Start Guide for the Live Tools Dashboard Script
@@ -282,21 +282,21 @@ This is a quick start guide to get you up and running with the [live tools](scri
 
 **NOTE:** *Beware, this is not a secure API Key storage method\!*
 
-3. Install the following Python packages with the following commands  
+3. Install the following Python packages with the following commands: 
    1. *`pip install pywebio`*  
    2. *`pip install requests`*  
-4. In a terminal navigate to the working directory and run the command  
+4. In a terminal, navigate to the working directory and run the command:
    1. *`python meraki-dashboard.py`*  
-5. In a browser open the URL prompted by the application on the next line, for example: [http://localhost:8999/](http://localhost:8999/)  
+5. In a browser, open the URL prompted by the application on the next line, for example: [http://localhost:8999/](http://localhost:8999/)  
 6. Load the webpage and start working with the functions\!
 
 # 
 
 ## General Notes, Tips and Tricks
 
-* Try to think of the AI as an assistant or employee when you work with it. Directing it as a leader, praising it for getting things right and collaborating with it when things go wrong or get hard to figure out.
+* Try to think of the AI as an assistant or employee when you work with it. Directing it as a leader, praising it for getting things right, and collaborating with it when things go wrong or get hard to figure out.
 
-* The PywebIO scripts I provide run in server mode with debugging enabled, you’ll see this line at toward end of the scripts:   
+* The PywebIO scripts I provide run in server mode with debugging enabled; you’ll see this line toward the end of the scripts:   
   *`start\_server(main, port=8999, debug=True)`*  
   By using debug=True to enable debug mode, the server will automatically reload if the code changes.
 
