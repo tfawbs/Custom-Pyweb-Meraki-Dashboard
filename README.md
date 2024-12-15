@@ -294,6 +294,8 @@ This is a quick start guide to get you up and running with the [live tools](scri
 
 ## General Notes, Tips and Tricks
 
+* My scripts and prompts in this repo use the Python Requests Library to make API calls, requests however may not handle large Orgs well for certain API calls, for example, you may need to make multiple API calls per page of output to get all the data points, or you may hit 429s. If you are going to apply this project to big Organisations with many devices using the [Meraki Python SDK](https://developer.cisco.com/meraki/api-v1/python/) is the best idea since it can handle these things for you automatically, especially for a project you expect to grow. Simply specify you want to use [Meraki Python SDK](https://developer.cisco.com/meraki/api-v1/python/) to the AI and it will build the scripts with this in mind.
+
 * Try to think of the AI as an assistant or employee when you work with it. Directing it as a leader, praising it for getting things right, and collaborating with it when things go wrong or get hard to figure out.
 
 * The PywebIO scripts I provide run in server mode with debugging enabled; you’ll see this line toward the end of the scripts:   
